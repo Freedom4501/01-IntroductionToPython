@@ -2,12 +2,19 @@
 Your chance to explore Loops and Turtles!
 
 Authors: David Mutchler, Dave Fisher, Vibha Alangar, Amanda Stouder,
-         their colleagues and PUT_YOUR_NAME_HERE.
+         their colleagues and Mashengjun Li.
 """
 ###############################################################################
-# TODO: 1.
+# Done: 1.
 #   On Line 5 above, replace  PUT_YOUR_NAME_HERE  with your own name.
 ###############################################################################
+import rosegraphics as rg
+ashe = rg.SimpleTurtle('turtle')
+ashe.pen = rg.Pen('yellow',15)
+ashe.speed = 20
+
+for k in range(36):
+    ashe.
 
 ###############################################################################
 # TODO: 2.
