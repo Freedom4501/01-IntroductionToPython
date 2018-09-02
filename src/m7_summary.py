@@ -45,8 +45,13 @@ ashe.pen = rg.Pen('blue', 10)
 ashe.speed = 50
 ashe.forward(200)
 ashe.pen_up()
-ashe.left(40)
-ashe.forward(100)
+x=100
+y=-40
+ashe.x_cor()
+ashe.y_cor()
+ashe.go_to(x)
+ashe.go_to(y)
+
 ashe.pen_down()
 ashe.pen = rg.Pen('green',10)
 ashe.forward(150)
