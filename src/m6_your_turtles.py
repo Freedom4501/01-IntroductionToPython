@@ -11,11 +11,19 @@ Authors: David Mutchler, Dave Fisher, Vibha Alangar, Amanda Stouder,
 import rosegraphics as rg
 window = rg.TurtleWindow()
 ashe = rg.SimpleTurtle('turtle')
-ashe.pen = rg.Pen('yellow',1)
-ashe.speed = 20
-window.delay(100)
+ashe.pen = rg.Pen('red',1)
+ashe.speed = 50
+window.delay(50)
 
-for k in range(18):
+garen = rg.SimpleTurtle('turtle')
+garen.pen_down()
+garen.pen = rg.Pen('cyan', 1)
+garen.speed= 50
+garen.pen_up()
+garen.forward(150)
+garen.pen_down()
+
+for k in range(19):
     ashe.forward(50)
     ashe.right(165)
     ashe.forward(98)
@@ -23,10 +31,26 @@ for k in range(18):
     ashe.forward(50)
     angle = 10
     ashe.right(angle+10)
+    garen.forward(50)
+    garen.right(165)
+    garen.forward(98)
+    garen.right(165)
+    garen.forward(50)
+    angle = 10
+    garen.right(angle +10)
+
+ashe.pen_up()
+ashe.forward(100)
+ashe.pen_down()
+
+for k in range(10):
+    ashe.draw_circle(20)
+    ashe.forward(10)
+
 
 window.close_on_mouse_click()
 ###############################################################################
-# TODO: 2.
+#  Done: 2.
 #   You should have RUN the  m5e_loopy_turtles  module and READ its code.
 #   (Do so now if you have not already done so.)
 #
